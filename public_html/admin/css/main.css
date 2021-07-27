@@ -1,0 +1,270 @@
+.page-cover {
+    background-size: cover;
+    position: relative;
+}
+
+.page-cover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.page-cover[filter-color="black"]:before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.login-wrap {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+}
+
+.login-wrap:before, .login-wrap:after {
+    content: '';
+    display: block;
+    min-height: 24px;
+    flex: 1;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-align > div:first-child {
+    flex: 1;
+}
+
+.flex-align > a:not(:first-child) {
+    margin-left: 16px;
+}
+
+.uploaded-image-wrap {
+    text-align: center;
+}
+
+.image-preview {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, .42), 0 4px 25px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+}
+
+.image-preview > * {
+    max-width: 100%;
+}
+
+.template {
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.content-item {
+    border: 1px #ccc solid;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.content-item .form-control {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 600;
+}
+
+.content-item .fr-toolbar, .content-item .fr-wrapper, .content-item .second-toolbar {
+    border: none !important;
+}
+
+.fr-wrapper .fr-element.fr-view {
+    padding: 8px;
+}
+
+.content-item .second-toolbar {
+    border-top: 1px #ccc solid !important;
+}
+
+.form-intro {
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.form-intro .fr-toolbar, .form-intro .second-toolbar {
+    border-radius: 0 !important;
+}
+
+.flex-row {
+    flex: 1;
+}
+
+.card-bottom-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card-bottom-actions > *:not(:first-child) {
+    margin-left: 16px;
+}
+
+.empty-block {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+    padding-right: 4px;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.flex-title > *:first-child {
+    flex: 1;
+    margin-right: 16px;
+}
+
+div[data-notify="container"] {
+    pointer-events: none !important;
+    z-index: 12103912 !important;
+}
+
+.row-actions {
+    width: 1px;
+    white-space: nowrap;
+    min-width: auto !important;
+}
+
+.inline-icon {
+    display: inline-block;
+    width: 24px;
+}
+
+.form-control[disabled] {
+    opacity: 0.5;
+}
+
+.admin-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 24px 2px 2px;
+    border-radius: 30px;
+    background-color: currentColor;
+    overflow: hidden;
+}
+
+.admin-info > .avatar {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background-color: #cccccc;
+    font-weight: bold;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-right: 8px;
+    font-size: 1.4em;
+}
+
+.admin-info > div {
+    line-height: initial;
+}
+
+.admin-info p {
+    margin: 0;
+    font-size: 0.6em;
+    color: #FFFFFF;
+}
+
+.admin-info strong {
+    color: #FFFFFF;
+    font-size: 0.9em;
+}
+
+.thumbnail {
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 0;
+    padding-top: 56%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.thumbnail > img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.e-carousel {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.e-carousel:after {
+    content: 'Nội dung hiển thị dưới dạng Carousel';
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #e3e3e3;
+    position: absolute;
+    z-index: 120;
+    border-radius: 0 10px;
+    bottom: 0;
+    left: 0;
+    pointer-events: none !important;
+}
+
+.e-carousel > li {
+    display: inline-flex;
+    width: calc(25% - 12px);
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px #ccc solid;
+    padding: 5px 0;
+}
+
+.fr-wrapper a[href*="froala.com"] {
+    color: #ffffff !important;
+    background-color: #ffffff !important;
+    pointer-events: none !important;
+}
+
+.ajax-form {
+    margin-bottom: 0 !important;
+}

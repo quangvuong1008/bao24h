@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+Sitemap: http://www.thephopxaydung.com/sitemap.xml
